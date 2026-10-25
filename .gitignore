@@ -1,0 +1,62 @@
+# ==========================================
+# Python virtual environments
+# ==========================================
+.venv/
+venv/
+env/
+
+# ==========================================
+# Python cache and build artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ==========================================
+# Testing and development tools
+# ==========================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Model weights and checkpoints
+# ==========================================
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# ==========================================
+# Training outputs
+# ==========================================
+runs/
+outputs/
+wandb/
+logs/
+
+# ==========================================
+# Datasets
+# ==========================================
+data/
+datasets/
+
+# ==========================================
+# IDE and operating system
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
