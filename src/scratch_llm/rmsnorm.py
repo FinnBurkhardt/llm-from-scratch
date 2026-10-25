@@ -10,8 +10,10 @@ class RMSNorm(nn.Module):
         self.eps = eps
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # Save the original dtype to restore it after normalization
         input_dtype = x.dtype
 
+        # Compute normalization statistics in float32 for numerical stability
         x_float = x.float()
 
         mean_square = x_float.square().mean(dim=-1, keepdim=True)
